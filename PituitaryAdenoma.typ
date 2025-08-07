@@ -8,14 +8,16 @@
 #show: university-theme.with(
   aspect-ratio: "16-9",
   config-info(
-    title: [Title],
-    subtitle: [Subtitle],
-    author: [Authors],
+    title: [下垂体腺腫について],
+    subtitle: [Incidentalomaについて],
+    author: [Nozomi Niimi],
     date: datetime.today(),
-    institution: [Institution],
+    institution: [NTMC],
     logo: emoji.school,
   ),
 )
+
+#show link: underline
 
 #set heading(numbering: numbly("{1}.", default: "1.1"))
 
@@ -54,7 +56,7 @@
 )
 
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
-#title-slide(authors: ([Nozomi Niimi], [Author B]))
+#title-slide(authors: ([Nozomi Niimi]))
 
 
 = Title
@@ -62,4 +64,6 @@
 == First Slide 
 
 Hello, Touying!
-
+#link((page: 1, x: 0pt, y: 0pt))[
+  Go to top
+]
