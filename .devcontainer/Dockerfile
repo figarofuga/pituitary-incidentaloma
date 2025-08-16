@@ -7,6 +7,8 @@ RUN apk update && \
     musl-locales \
     musl-locales-lang \
     curl \
+    zathura \
+    zathura-pdf-poppler \
     unzip \
     msttcorefonts-installer \
     font-noto \
