@@ -17,6 +17,25 @@
   ),
 )
 
+// for tall slide
+#let tall-slide(body) = touying-slide-wrapper(self => {
+  self = utils.merge-dicts(self, config-page(
+    width: 33.867cm,
+    height: 33.867cm,
+  ))
+  touying-slide(self: self, body)
+})
+
+
+// == PEGの倫理的適応
+
+// #tall-slide[
+//   #figure(
+//   image("figure/PEG_rirni_tekiou.jpeg", height: 70%)
+// )
+// ]
+
+
 #show link: underline
 
 #set heading(numbering: numbly("{1}.", default: "1.1"))
