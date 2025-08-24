@@ -32,6 +32,15 @@
 
 #let lb = linebreak(justify: false)
 
+// 大まかなゲシュタルトとして若年者の #lb 「繰り返す発熱と腹痛(+高CRP)」を忘れない  使用例
+
+#let refs(body) = {
+  set text(size: 8pt)
+  align(right, body)
+}
+
+// #refs("Dysphagia. 2024;39(5):837-845.") 使用例
+
 #set list(marker: ([•], [◦], [🗸]))
 #let list-counter = counter("list")
 
@@ -56,27 +65,66 @@
 )
 
 // Use #polylux-slide to create a slide and style it using your favourite Typst functions
+
 #title-slide(authors: ([Nozomi Niimi]))
 
+== 症例 
 
-= Title
+- 79歳女性、自宅内転倒で救急搬送
+- 頭部CTで下垂体腺腫を指摘される
+- 依頼文にて、「偶発的に下垂体腺腫が指摘されておりそちらの精査もお願いします」と
 
-== First Slide 
 
-Hello, Touying!
-#link((page: 1, x: 0pt, y: 0pt))[
-  Go to top
-]
+// #link((page: 1, x: 0pt, y: 0pt))[
+//   Go to top
+// ]
+
+== Sellar massについて
+
+- 下垂体腺腫が最多
+- Rathke嚢胞
+- 小児だと頭蓋咽頭腫など
+
+// Todo: 表などいれる
+
+== 下垂体腺腫の分類
+
+- 大きさで分けるのが最も重要
+- 10mm以上: macroadenoma
+- 10mm未満: microadenoma
+
+== 下垂体腺腫の由来
+
+- 実臨床的にはホルモン産生で分けるのが良い
+  - Prolactinoma
+  - GH産生腫瘍
+  - ACTH産生腫瘍
+  - TSH産生腫瘍
+  - 非機能性腫瘍(non-functioning pituitary adenoma: NFPA)
+
+== 下垂体偶発種とは
+
+- 下垂体に偶発的に見つかった結節を”pituitary incidentaloma”と言う
+  - そのため、厳密には下垂体腺腫以外も含む(7-8割は腺腫、次はRathke嚢胞)
+- 微小の下垂体結節は結構Common
+  - 無関係の理由でMRIを撮像したうち、microadenomaは10-38%
+  - macroadenomaは0.2%
+  - Autopsyだと日本人のうち18%程度あると言われている
+
+#refs("Radiology. 1994;193(1):161-164. doi:10.1148/radiology.193.1.8090885
+")
+
+
+== 下垂体偶発種を語る上で重要な視点
+
+- 上記の通り、Incidentalomaは実は多い
+- その為、悉皆調査は基本的には無理
+- かつ、分類や下垂体腺腫の種類は本来はOpeしないと分からない
+- ⇒ 下垂体腺腫の疫学はその臨床現場 #lb (見つかった理由やOpeをしたかなど)に依存する
+
 
 == 
 
-定義
-  • 下垂体に偶発的に見つかった結節を”pituitary incidentaloma”と言う。
-  • 微小の下垂体結節はcommonであり、無関係の理由でMRIを撮像したうち、microadenomaは10-38%に認められた一方でmacroadenomaは0.2%のみだった。
-  • ほとんどの下垂体incidentalomaは良性のnonfunctional adenomaである。
-分類
-  • 10mm以上: macroadenoma, 
-  • 10mm未満: microadenoma
 疫学
   • Incidentalomaと通常のAdenomaで疫学が変わる
     ○ 通常のPituitary adenomaの場合
@@ -117,7 +165,7 @@ Hello, Touying!
       • まずは、8-9時の血清Cortisolを測定する
         ○ cortisol < 80 nmol/L (3 mcg/dL)は副腎不全
         ○ Cortisolが3mcg/dL-15mcg/dLの時にACTH負荷試験を行う
-        ○ 250mcgのACTHを注射をして30/60分後のCortisolが<18mcgで副腎不全
+        ○ 250mcgのACTHを注射をして30/60分後のCortisolが\<18mcgで副腎不全
         ○ 7-9時が最もACTHが最大値となる。Cortisolと同時採血した時のACTHの値が正常上限値の2倍以上の時に原発性副腎不全( > 22 pmol/L (100 pg/mLが典型的だが、ほとんど> 45 pmol/L )
         ○ 二次性副腎不全の場合通常ACTHは< 12 pmol/L (52 pg/mL)となる.
         ○ Insulin tolerance test (ITT) が中枢性副腎不全の最も信頼できる検査だが使いにくい
