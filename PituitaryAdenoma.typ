@@ -133,6 +133,13 @@
 #refs("Radiology. 1994;193(1):161-164. doi:10.1148/radiology.193.1.8090885
 ")
 
+== Pituitary adenoma is common
+
+    ○ 一般人口だと約10%であると言われている
+    ○ 日本での1000人の連続するAutopsy患者では178人にIncidentalomaがあり、そのうち34%が2mm以上
+      § AdenomaとHyperplasiaが20人(11%)
+      § 37人(21%)がRathke嚢胞
+      § 梗塞および出血がおのおの2人(1%)
 
 == 下垂体偶発種を語る上で重要な視点
 
@@ -140,18 +147,16 @@
 - その為、悉皆調査は基本的には無理
 - かつ、分類や下垂体腺腫の種類は本来はOpeしないと分からない
 - ⇒ 下垂体腺腫の疫学はその臨床現場 #lb (見つかった理由やOpeをしたかなど)に依存する
-
-
 == 
 
 疫学
-  • Incidentalomaと通常のAdenomaで疫学が変わる
-    ○ 通常のPituitary adenomaの場合
-      § 53%がProlactinoma
-      § 30%が非機能性Pituitary adenoma
-      § 12%がGH産生腫瘍(somatotropinoma)
-      § 4%がACTH産生腫瘍(Corticotropinoma)
-      § 1%がTSH産生腫瘍(thyrotropinoma)
+  - Incidentalomaと通常のAdenomaで疫学が変わる
+    - 通常のPituitary adenomaの場合
+      - 53%がProlactinoma
+      - 30%が非機能性Pituitary adenoma
+      - 12%がGH産生腫瘍(somatotropinoma)
+      - 4%がACTH産生腫瘍(Corticotropinoma)
+      - 1%がTSH産生腫瘍(thyrotropinoma)
     ○ Incidentalomaの場合
       § 55%が非機能性Pituitary adenoma
       § 14%がRathke's cleft cysts
@@ -159,16 +164,62 @@
       § 5%がGH産生腫瘍
       § 2%がACTH産生腫瘍
       § 半分以上がホルモン欠乏がある
-  • Pituitary adenomaは検査されていないだけでCommon
-    ○ 一般人口だと約10%であると言われている
-    ○ 日本での1000人の連続するAutopsy患者では178人にIncidentalomaがあり、そのうち34%が2mm以上
-      § AdenomaとHyperplasiaが20人(11%)
-      § 37人(21%)がRathke嚢胞
-      § 梗塞および出血がおのおの2人(1%)
 
-== 
+== Pituitary incidentalomaを見たら・・・・・・
 
-下垂体機能不全について
+- 2つの視点で考える
+1. 腫瘍自身がホルモン産生
+1. 腫瘍による圧排効果
+　1. 下垂体自身への圧排効果 = 下垂体機能不全
+  1. 周囲の組織(=視交叉)
+
+== 腫瘍によるホルモン産生総論
+
+- 頻度と治療可能性の観点で考える
+- PRLは治療可能
+- ACTH, GHは予後不良となり
+
+== 下垂体のホルモン過剰
+
+
+  • Microincidetanlomaでは稀とされる
+  • Macroadenoma全体では以下の通り
+    Prolactinomaが53%, GH産生が12%, ACTH産生が4%, TSH産生が1%
+Reincke M, Fleseriu M. Cushing Syndrome: A Review. JAMA. 2023;330(2):170-181. doi:10.1001/jama.2023.11305 
+  • 高PRL血症: ルーチンで検査
+    ○ PRL > 250 mcg/Lは特異度100％でProlactinoma
+    ○ Prolactinomaによるものや、他の腺腫による茎部圧迫によるもの(Stalk effect)の両者がありうる
+    ○ その他に薬剤や甲状腺機能を確認する
+  • ACTH-dependent Cushing disease: 臨床的に疑わない時検査するかは悩ましい(2011年のガイドラインだと、臨床的に疑った時のみ検査を推奨)
+    ○ Cushing syndromeの検査
+      § LDST(1mg Dex負荷試験)：23時に内服して翌日8時に採血。Cut offを1.8mcg/dLとすると感度98.6%, 特異度90.6%
+      § 24時間蓄尿のFree cortisolは感度94%, 特異度93%
+      § Late-night 唾液中cortisol：23時～翌日午後0時までの唾液を自宅で集めて測定。感度95.8%, 特異度93.4%
+    ○ Cushing diseaseかの鑑別: Cortisol過剰でACTH濃度が正常～高値で感度85%, 特異度90-94%
+  • Acromegaly or Gigantism (GH excess): ルーチンで行う
+    ○ IGF-1：年齢調整されたCutoffで感度、特異度はほぼ100%(12－18歳、妊婦以外)
+    ○ OGTT検査でGH ≧0.4 mcg/L(抑制されない)は感度85-90%, 特異度は95%を超える
+  • TSH過剰症: ルーチンでは行わない
+血清FT4が高値で、TSHが不適切に正常値～高値だと感度はほぼ100%
+
+== いつ、どのように検査をする？
+
+  • ホルモン過剰について、Macroadenomaにおいても明らかなScreening方法は決まっていない
+    ○ 2011年のガイドラインでは、PRLとGHはルーチンで測定を推奨。ACTHは臨床所見をみての検査を推奨している。
+      § PRLは経口での治療が可能なため、GH過剰産生は予後に強く影響する上に初期は無症候である事が多いため。ACTHも同じ理由でExpertによっては検査をするとの事。
+    ○ Review論文だと下垂体のホルモン過剰産生はProlactin, IGF-1の測定で除外すべきである。
+      § UptodateだとPRL、IGF-1、LH、FSH、ACTH、24時間尿中Cortisolを推奨。
+
+
+== 下垂体機能不全総論
+
+- 生命予後を悪化させるホルモンを重点的にみる
+1. 副腎不全
+1. 甲状腺機能低下症
+- 一方で、HypogonadismやGH欠乏は成人だと治療適応も難しい
+
+== 下垂体機能不全各論
+
 • Micro incidentalomaでの下垂体機能不全は7-66%でMacroincidentalomaでは19-46%とされる
   • Hypogonadismは~30%
   • 副腎不全は~18%
@@ -224,33 +275,9 @@
       • 2011年のガイドラインでは、IGF-1低下のみでGH欠乏の診断は出来ないと記載あり
   • Prolactin欠乏
     ○ 血清PRLが< 100 pmol/Lの時に欠乏を示唆する
-下垂体のホルモン過剰
-  • Microincidetanlomaでは稀とされる
-  • Macroadenoma全体では以下の通り
-    Prolactinomaが53%, GH産生が12%, ACTH産生が4%, TSH産生が1%
-Reincke M, Fleseriu M. Cushing Syndrome: A Review. JAMA. 2023;330(2):170-181. doi:10.1001/jama.2023.11305 
-  • 高PRL血症: ルーチンで検査
-    ○ PRL > 250 mcg/Lは特異度100％でProlactinoma
-    ○ Prolactinomaによるものや、他の腺腫による茎部圧迫によるもの(Stalk effect)の両者がありうる
-    ○ その他に薬剤や甲状腺機能を確認する
-  • ACTH-dependent Cushing disease: 臨床的に疑わない時検査するかは悩ましい(2011年のガイドラインだと、臨床的に疑った時のみ検査を推奨)
-    ○ Cushing syndromeの検査
-      § LDST(1mg Dex負荷試験)：23時に内服して翌日8時に採血。Cut offを1.8mcg/dLとすると感度98.6%, 特異度90.6%
-      § 24時間蓄尿のFree cortisolは感度94%, 特異度93%
-      § Late-night 唾液中cortisol：23時～翌日午後0時までの唾液を自宅で集めて測定。感度95.8%, 特異度93.4%
-    ○ Cushing diseaseかの鑑別: Cortisol過剰でACTH濃度が正常～高値で感度85%, 特異度90-94%
-  • Acromegaly or Gigantism (GH excess): ルーチンで行う
-    ○ IGF-1：年齢調整されたCutoffで感度、特異度はほぼ100%(12－18歳、妊婦以外)
-    ○ OGTT検査でGH ≧0.4 mcg/L(抑制されない)は感度85-90%, 特異度は95%を超える
-  • TSH過剰症: ルーチンでは行わない
-血清FT4が高値で、TSHが不適切に正常値～高値だと感度はほぼ100%
 
+== いつ、どのように検査をする？
 
-  • ホルモン過剰について、Macroadenomaにおいても明らかなScreening方法は決まっていない
-    ○ 2011年のガイドラインでは、PRLとGHはルーチンで測定を推奨。ACTHは臨床所見をみての検査を推奨している。
-      § PRLは経口での治療が可能なため、GH過剰産生は予後に強く影響する上に初期は無症候である事が多いため。ACTHも同じ理由でExpertによっては検査をするとの事。
-    ○ Review論文だと下垂体のホルモン過剰産生はProlactin, IGF-1の測定で除外すべきである。
-      § UptodateだとPRL、IGF-1、LH、FSH、ACTH、24時間尿中Cortisolを推奨。
   • ホルモン低下について、複数のScreening方法があり確定的なものはない。
     ○ 2011年のガイドラインでは意見を2つ載せている
       § Minimal: FT4, 朝のCortisolとTestosterone
