@@ -147,9 +147,9 @@
 - その為、悉皆調査は基本的には無理
 - かつ、分類や下垂体腺腫の種類は本来はOpeしないと分からない
 - ⇒ 下垂体腺腫の疫学はその臨床現場 #lb (見つかった理由やOpeをしたかなど)に依存する
-== 
 
-疫学
+== 疫学
+
   - Incidentalomaと通常のAdenomaで疫学が変わる
     - 通常のPituitary adenomaの場合
       - 53%がProlactinoma
@@ -170,37 +170,70 @@
 - 2つの視点で考える
 1. 腫瘍自身がホルモン産生
 1. 腫瘍による圧排効果
-　1. 下垂体自身への圧排効果 = 下垂体機能不全
+  1. 下垂体自身への圧排効果 = 下垂体機能不全
   1. 周囲の組織(=視交叉)
 
 == 腫瘍によるホルモン産生総論
 
 - 頻度と治療可能性の観点で考える
-- PRLは治療可能
-- ACTH, GHは予後不良となり
+  - PRLは治療可能
+  - ACTH, GHは予後不良となり手術の治療適応
+- PRL, ACTH, GHは検索すべし！！
 
 == 下垂体のホルモン過剰
 
+- Microincidetanlomaでは稀とされる
+- Macroadenoma全体では以下の通り
+  - Prolactinomaが53%, GH産生が12%, ACTH産生が4%, TSH産生が1%
+#refs("2023;329(16):1386-1398. doi:10.1001/jama.2023.5444")
 
-  • Microincidetanlomaでは稀とされる
-  • Macroadenoma全体では以下の通り
-    Prolactinomaが53%, GH産生が12%, ACTH産生が4%, TSH産生が1%
-Reincke M, Fleseriu M. Cushing Syndrome: A Review. JAMA. 2023;330(2):170-181. doi:10.1001/jama.2023.11305 
-  • 高PRL血症: ルーチンで検査
-    ○ PRL > 250 mcg/Lは特異度100％でProlactinoma
-    ○ Prolactinomaによるものや、他の腺腫による茎部圧迫によるもの(Stalk effect)の両者がありうる
-    ○ その他に薬剤や甲状腺機能を確認する
-  • ACTH-dependent Cushing disease: 臨床的に疑わない時検査するかは悩ましい(2011年のガイドラインだと、臨床的に疑った時のみ検査を推奨)
-    ○ Cushing syndromeの検査
-      § LDST(1mg Dex負荷試験)：23時に内服して翌日8時に採血。Cut offを1.8mcg/dLとすると感度98.6%, 特異度90.6%
-      § 24時間蓄尿のFree cortisolは感度94%, 特異度93%
-      § Late-night 唾液中cortisol：23時～翌日午後0時までの唾液を自宅で集めて測定。感度95.8%, 特異度93.4%
-    ○ Cushing diseaseかの鑑別: Cortisol過剰でACTH濃度が正常～高値で感度85%, 特異度90-94%
-  • Acromegaly or Gigantism (GH excess): ルーチンで行う
-    ○ IGF-1：年齢調整されたCutoffで感度、特異度はほぼ100%(12－18歳、妊婦以外)
-    ○ OGTT検査でGH ≧0.4 mcg/L(抑制されない)は感度85-90%, 特異度は95%を超える
-  • TSH過剰症: ルーチンでは行わない
-血清FT4が高値で、TSHが不適切に正常値～高値だと感度はほぼ100%
+#link(<hyperprl>)[
+  - 高PRL血症: ルーチンで検査
+  ]
+
+#link(<cushing>)[
+  - Cushing syndrome: ルーチンで検査(?)
+  ]
+
+#link(<hypergh>)[
+  - 先端巨大症(GH excess): ルーチンで検査
+  ]
+
+#link(<hypertsh>)[
+  - 中枢性甲状腺機能亢進症: ルーチンでは行わない
+  ]
+
+== 高PRL血症 #label("hyperprl")
+
+
+- PRL > 250 mcg/Lは特異度100％でProlactinoma
+- 一方で中途半端な高値は色々な理由がある
+  - 薬剤(D2 blocker)や甲状腺機能を確認する
+- 更に下垂体腺腫自身の茎部圧迫によるもの(Stalk effect)の両者がありうる
+  - Stalk effectはPRL < 150 mcg/L程度である事が多い
+#refs("2023;329(16):1386-1398. doi:10.1001/jama.2023.5444")
+
+== Cushing syndrome #label("cushing")
+
+- 2011年のヨーロッパのガイドラインだと実は絶対ではない(臨床的に疑った時のみ)
+#refs("J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
+  - 個人的には、Macroadenomaならばルーチンで行うべきと考える
+- 3種類の方法があるが、一番簡単なのはLDST
+  - LDST(1mg Dex負荷試験)：23時に内服して翌日8時に採血。Cut offを1.8mcg/dLとすると感度98.6%, 特異度90.6%
+  - 24時間蓄尿のFree cortisolは感度94%, 特異度93%
+  - Late-night 唾液中cortisol：23時～翌日午後0時までの唾液を自宅で集めて測定。感度95.8%, 特異度93.4%
+- 中枢性か(Cushing diseaseか)の鑑別: Cortisol過剰でACTH濃度が正常～高値で感度85%, 特異度90-94%
+
+== 先端巨大症(GH excess) #label("hypergh")
+
+- GHの値だけでは診断出来ない
+- IGF-1：年齢調整されたCutoffで感度、特異度はほぼ100%(12－18歳、妊婦以外)
+- OGTT検査でGH ≧0.4 mcg/L(抑制されない)は感度85-90%, 特異度は95%を超える
+
+== 中枢性甲状腺機能亢進症 #label("hypertsh")
+
+- TSH過剰症: ルーチンでは行わない
+- 血清FT4が高値で、TSHが不適切に正常値～高値だと感度はほぼ100%
 
 == いつ、どのように検査をする？
 
@@ -302,3 +335,5 @@ Follow up
 • Boguszewski CL, de Castro Musolino NR, Kasuki L. Management of pituitary incidentaloma. Best Pract Res Clin Endocrinol Metab. 2019;33(2):101268. doi:10.1016/j.beem.2019.04.002 
 • Lee SY, Pearce EN. Hyperthyroidism: A Review. JAMA. 2023;330(15):1472-1483. doi:10.1001/jama.2023.19052 
 Peter J Snyder, MD. Pituitary incidentalomas. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed August 15, 2025. https://www.uptodate.com. 
+- Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048
+  
