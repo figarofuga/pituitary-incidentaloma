@@ -292,29 +292,18 @@
 
 
 
-== 中枢性甲状腺機能低下 #label("hypothiroid")
+== 中枢性甲状腺機能低下 #label("hypothyroid")
+
+- 低T4にも関わらず不適切に低値～正常範囲のTSHのときに疑う
+- 特に深く考えないでも良い
+- もしも、NTIと区別が難しいときは時間をあけて再検査が現実的
+
 == GH欠乏 #label("GH_def")
+
+- blahblah
+
 == Hypogonadism #label("hypogonado")
-== 中枢性尿崩症 #label("central_di")
 
-
-
-- Micro incidentalomaでの下垂体機能不全は7-66%でMacroincidentalomaでは19-46%とされる
-  - Hypogonadismは~30%
-  - 副腎不全は~18%
-  - 甲状腺機能低下は~28%
-  - GH欠乏は~8%
-- 腫瘍圧迫による下垂体機能低下の一般論として
-  - GH, FSH, LH↓ → TSH↓ → ACTH↓ であり、副腎不全がある時は汎下垂体機能低下症を疑う
-  - 虎ノ門の教科書では中枢性尿崩症は術後でない限り下垂体腺腫では起きないとの事
-- 2011年のガイドラインだとClass Iでホルモン欠乏の検査を推奨している。
-- JAMAのReviewだと、検査はまずは迅速ACTH試験、中枢性TSH欠乏の確認、次に中枢性Hypogonadismを推奨。GH欠乏は下垂体腺腫の治療が終わり他のホルモン補充が終わったあとまでは検査しない事を推奨。
-  
-
-- 中枢性甲状腺機能低下症central hypothyroidism (thyroid stimulating hormone [TSH] deficiency)
-    - 低T4にも関わらず不適切に低値～正常範囲のTSHのときに疑う
-  - 中枢性hypogonadism (gonadotropin hormone deficiency)
-    - 中枢性hypogonadism (gonadotropin hormone deficiency)
       - 男性
         - まずは早朝(可能なら7-11時前で空腹)のTotal testosteroneを最初に行う
         - Total testosteroneが10.4nmol/L未満（300ng/dL未満）で、FSH, LHが2回とも低いか正常であれば、ゴナドトロピン欠乏症と診断可能
@@ -328,6 +317,27 @@
       - ゴナドトロピン放出ホルモン（GnRH）刺激検査は、基礎ホルモン検査の結果がはっきりしない場合にゴナドトロピン欠乏症の診断に用いられてきたが、国際的な内分泌学会では推奨されていない。理由として
         - GnRH刺激試験は、ゴナドトロピン分泌反応を検出するために数日間の刺激を必要とする
         - 単回GnRH注射でゴナドトロピン欠乏症の主原因を同定するのは難しい
+
+== 中枢性尿崩症 #label("central_di")
+
+- blahblah
+
+== test
+
+- Micro incidentalomaでの下垂体機能不全は7-66%でMacroincidentalomaでは19-46%とされる
+  - Hypogonadismは~30%
+  - 副腎不全は~18%
+  - 甲状腺機能低下は~28%
+  - GH欠乏は~8%
+- 腫瘍圧迫による下垂体機能低下の一般論として
+  - GH, FSH, LH↓ → TSH↓ → ACTH↓ であり、副腎不全がある時は汎下垂体機能低下症を疑う
+  - 虎ノ門の教科書では中枢性尿崩症は術後でない限り下垂体腺腫では起きないとの事
+- 2011年のガイドラインだとClass Iでホルモン欠乏の検査を推奨している。
+- JAMAのReviewだと、検査はまずは迅速ACTH試験、中枢性TSH欠乏の確認、次に中枢性Hypogonadismを推奨。GH欠乏は下垂体腺腫の治療が終わり他のホルモン補充が終わったあとまでは検査しない事を推奨。
+  
+
+
+
   - 中枢性尿崩症diabetes insipidus (antidiuretic hormone deficiency)
     - 診断のGold standardは存在しない
     - 水制限試験がしばしば初期の検査で行われる
