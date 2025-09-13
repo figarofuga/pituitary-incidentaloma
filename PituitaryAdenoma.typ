@@ -1,6 +1,8 @@
 // Get Polylux from the official package repository
 #import "@preview/touying:0.5.5": *
 #import "@preview/fletcher:0.5.1" as fletcher: diagram, node, edge
+#import "@preview/cetz:0.4.0"
+#import "@preview/cetz-plot:0.1.2": plot, chart
 #import themes.university: *
 
 #import "@preview/numbly:0.1.0": numbly
@@ -147,20 +149,46 @@
 == 疫学
 
 // ToDO Bar chartにする
+#set page(width: auto, height: auto, margin: 0cm)
+
+#let data = (
+  ([Prolactinoma],     53),
+  ([Non-functioning pituitary adenoma],     30),
+  ([GH-producing adenoma],      12),
+  ([ACTH-producing adenoma],       4),
+  ([TSH-producing adenoma],      1),
+)
+
+#cetz.canvas({
+  let colors = gradient.linear(red, blue, green, yellow)
+
+  chart.piechart(
+    data,
+    value-key: 1,
+    label-key: none,
+    radius: 4,
+    slice-style: colors,
+    inner-radius: 0,
+    gap: 0,
+    outset-offset: 0,
+    outset: 3, 
+    outer-label: (content: "%", radius: 120%))
+})
+
+
 - Incidentalomaと通常のAdenomaで疫学が変わる
   - 通常のPituitary adenomaの場合
     - 53%がProlactinoma
     - 30%が非機能性Pituitary adenoma
     - 12%がGH産生腫瘍(somatotropinoma)
-      - 4%がACTH産生腫瘍(Corticotropinoma)
-      - 1%がTSH産生腫瘍(thyrotropinoma)
-  - Incidentalomaの場合
-    - 55%が非機能性Pituitary adenoma
-    - 14%がRathke's cleft cysts
-    - 11%がProlactinoma
-    - 5%がGH産生腫瘍
-    - 2%がACTH産生腫瘍
-    - 半分以上がホルモン欠乏がある
+    - 4%がACTH産生腫瘍(Corticotropinoma)
+    - 1%がTSH産生腫瘍(thyrotropinoma)
+
+  - Incidentalomaの場合(約90%がAdenoma)
+    - 約50%が非機能性Pituitary adenoma
+    - 10%がGH産生腫瘍
+    - 15%がGonadothropinoma
+#refs("J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
 
 == Pituitary incidentalomaを見たら・・・・・・
 
@@ -304,23 +332,28 @@
 
 == Hypogonadism #label("hypogonado")
 
-      - 男性
-        - まずは早朝(可能なら7-11時前で空腹)のTotal testosteroneを最初に行う
-        - Total testosteroneが10.4nmol/L未満（300ng/dL未満）で、FSH, LHが2回とも低いか正常であれば、ゴナドトロピン欠乏症と診断可能
-        - 健康な若年男性で肥満がない時の正常なTotal testosterone正常下限値は264 ng/dL (9.2 nmol/L)とされている(CDC).EAU は8-12 nmol/L (231-346 ng/dL) が正常下限としている
-        - Total testosterone level < 8 nmol/L (231 ng/dL)はTestosterone欠乏と定義される
-        - Total testosterone level > 8 nmol/L (231 ng/dL) かつ< 12 nmol/L (346 ng/dL) testosterone deficiencyかも知れない。追加の検査(free or bioavailable testosterone)を考慮する
-        - Total testosterone level ≥ 12 nmol/L (346 ng/dL)はTestosterone正常と考えて良い
-      - 閉経前女性: 無月経あるいは月経不順があり、E2低値および低値～正常値のFSHとLHだと診断可能
-      - 閉経後女性: FSH, LHが高値でないだけでほぼ診断可能
-        - 甲状腺異常やPRL高値について事前に除外する
-      - ゴナドトロピン放出ホルモン（GnRH）刺激検査は、基礎ホルモン検査の結果がはっきりしない場合にゴナドトロピン欠乏症の診断に用いられてきたが、国際的な内分泌学会では推奨されていない。理由として
-        - GnRH刺激試験は、ゴナドトロピン分泌反応を検出するために数日間の刺激を必要とする
-        - 単回GnRH注射でゴナドトロピン欠乏症の主原因を同定するのは難しい
+- 男性
+  - まずは早朝(可能なら7-11時前で空腹)のTotal testosteroneを最初に行う
+    - Total testosteroneが10.4nmol/L未満（300ng/dL未満）で、FSH, LHが2回とも低いか正常であれば、ゴナドトロピン欠乏症と診断可能
+    - 健康な若年男性で肥満がない時の正常なTotal testosterone正常下限値は264 ng/dL (9.2 nmol/L)とされている(CDC).EAU は8-12 nmol/L (231-346 ng/dL) が正常下限としている
+    - Total testosterone level < 8 nmol/L (231 ng/dL)はTestosterone欠乏と定義される
+    - Total testosterone level > 8 nmol/L (231 ng/dL) かつ< 12 nmol/L (346 ng/dL) testosterone deficiencyかも知れない。追加の検査(free or bioavailable testosterone)を考慮する
+    - Total testosterone level ≥ 12 nmol/L (346 ng/dL)はTestosterone正常と考えて良い
+  - 閉経前女性: 無月経あるいは月経不順があり、E2低値および低値～正常値のFSHとLHだと診断可能
+  - 閉経後女性: FSH, LHが高値でないだけでほぼ診断可能
+    - 甲状腺異常やPRL高値について事前に除外する
+  - ゴナドトロピン放出ホルモン（GnRH）刺激検査は、基礎ホルモン検査の結果がはっきりしない場合にゴナドトロピン欠乏症の診断に用いられてきたが、国際的な内分泌学会では推奨されていない。理由として
+    - GnRH刺激試験は、ゴナドトロピン分泌反応を検出するために数日間の刺激を必要とする
+    - 単回GnRH注射でゴナドトロピン欠乏症の主原因を同定するのは難しい
 
 == 中枢性尿崩症 #label("central_di")
 
-- blahblah
+- 診断のGold standardは存在しない
+- 水制限試験がしばしば初期の検査で行われる
+  - 水分制限試験の亜種として、3%食塩水刺激試験がある
+  - 多尿 (> 50 mL/kg in 24 hours or 3.5 L/day in a 70kg) の時に血清と尿中浸透圧を同時測定する
+  - 尿糖なしの時に、血清浸透圧 >295 mOsm/kg、尿浸透圧が600 mOsm/kgの時(尿と血清浸透圧の比が2以上)が正常
+  - 尿崩症は血清浸透圧 >295 mOsm/kgの時に尿浸透圧が600 mOsm/kg未満の時(尿と血清浸透圧の比が2未満)で診断される
 
 == test
 
@@ -337,14 +370,6 @@
   
 
 
-
-  - 中枢性尿崩症diabetes insipidus (antidiuretic hormone deficiency)
-    - 診断のGold standardは存在しない
-    - 水制限試験がしばしば初期の検査で行われる
-      - 水分制限試験の亜種として、3%食塩水刺激試験がある
-      - 多尿 (> 50 mL/kg in 24 hours or 3.5 L/day in a 70kg) の時に血清と尿中浸透圧を同時測定する
-      - 尿糖なしの時に、血清浸透圧 >295 mOsm/kg、尿浸透圧が600 mOsm/kgの時(尿と血清浸透圧の比が2以上)が正常
-      - 尿崩症は血清浸透圧 >295 mOsm/kgの時に尿浸透圧が600 mOsm/kg未満の時(尿と血清浸透圧の比が2未満)で診断される
   - GH欠乏
       - GH欠乏は事前確率が高い状態でのみ疑う(高い事前確率とは以下の基準のうち1つ以上を満たす)
         - 若い男性で正常な下垂体だが低身長でGH欠乏の診断が幼少期にされている
