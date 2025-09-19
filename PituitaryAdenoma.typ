@@ -148,44 +148,16 @@
 
 == 疫学
 
-// ToDO Bar chartにする
-#set page(width: auto, height: auto, margin: 0cm)
-
-#let data = (
-  ([Prolactinoma],     53),
-  ([Non-functioning pituitary adenoma],     30),
-  ([GH-producing adenoma],      12),
-  ([ACTH-producing adenoma],       4),
-  ([TSH-producing adenoma],      1),
-)
-
-#cetz.canvas({
-  let colors = gradient.linear(red, blue, green, yellow)
-
-  chart.piechart(
-    data,
-    value-key: 1,
-    label-key: none,
-    radius: 4,
-    slice-style: colors,
-    inner-radius: 0,
-    gap: 0,
-    outset-offset: 0,
-    outset: 3, 
-    outer-label: (content: "%", radius: 120%))
-})
-
-
 - Incidentalomaと通常のAdenomaで疫学が変わる
   - 通常のPituitary adenomaの場合
     - 53%がProlactinoma
-    - 30%が非機能性Pituitary adenoma
+    - *30%が非機能性Pituitary adenoma*
     - 12%がGH産生腫瘍(somatotropinoma)
     - 4%がACTH産生腫瘍(Corticotropinoma)
     - 1%がTSH産生腫瘍(thyrotropinoma)
 
   - Incidentalomaの場合(約90%がAdenoma)
-    - 約50%が非機能性Pituitary adenoma
+    - *約50%が非機能性Pituitary adenoma*
     - 10%がGH産生腫瘍
     - 15%がGonadothropinoma
 #refs("J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
@@ -194,19 +166,19 @@
 
 - 2つの視点で考える
 1. 腫瘍によるホルモン過剰産生
-1. 腫瘍による圧排効果
-  1. 下垂体自身への圧排効果 = 下垂体機能不全
-  1. 周囲の組織(=視交叉)
+2. 腫瘍による圧排効果
+  a. 下垂体自身への圧排効果 = 下垂体機能不全
+  b. 周囲の組織(=視交叉)
 
-= 腫瘍によるホルモン過剰酸性
+= 腫瘍によるホルモン過剰産生
 
-== ホルモン過剰産生の基本的な考え方
+== 基本的な考え方
 
 - Microincidetanlomaでは稀とされる
 - Macroadenoma全体では以下の通り
   - Prolactinomaが53%, GH産生が12%, ACTH産生が4%, TSH産生が1%
 - 頻度と治療可能性の観点で考える
-  - PRLは**内科的に治療可能**
+  - PRLは*内科的に治療可能*
   - ACTH, GHは予後不良で手術の治療適応
 - PRL, ACTH, GHは検索すべし！！
 
@@ -214,9 +186,9 @@
 
 == ホルモン過剰産生の各論
 
-#link(<hyperprl>)[
+- #text(size: 24pt)[#link(<hyperprl>)[
   - 高PRL血症: ルーチンで検査
-  ]
+  ]]
 
 #link(<cushing>)[
   - Cushing syndrome: ルーチンで検査(?)
@@ -242,14 +214,13 @@
 
 == Cushing syndrome #label("cushing")
 
-- 2011年のヨーロッパのガイドラインだと実は絶対ではない(臨床的に疑った時のみ)
+- 2011年のヨーロッパのガイドラインだと実は絶対ではない #lb (臨床的に疑った時のみ)
 #refs("J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
-  - 個人的には、Macroadenomaならばルーチンで行うべきと考える
+- 個人的には、Macroadenomaならばルーチンで行うべきと考える
 - 3種類の方法があるが、一番簡単なのはLDST
-  - LDST(1mg Dex負荷試験)：23時に内服して翌日8時に採血。Cut offを1.8mcg/dLとすると感度98.6%, 特異度90.6%
-  - 24時間蓄尿のFree cortisolは感度94%, 特異度93%
-  - Late-night 唾液中cortisol：23時～翌日午後0時までの唾液を自宅で集めて測定。感度95.8%, 特異度93.4%
-- 中枢性か(Cushing diseaseか)の鑑別: Cortisol過剰でACTH濃度が正常～高値で感度85%, 特異度90-94%
+  - LDST(1mg Dex負荷試験)：感度98.6%, 特異度90.6%
+  - 24時間蓄尿のFree cortisol:感度94%, 特異度93%
+  - 夜間唾液中cortisol：感度95.8%, 特異度93.4%
 
 == 先端巨大症(GH excess) #label("hypergh")
 
@@ -259,46 +230,69 @@
 
 == 中枢性甲状腺機能亢進症 #label("hypertsh")
 
-- TSH過剰症: ルーチンでは行わない
+- TSH過剰症の検査はルーチンでは行わない
+  - ただし、ホルモン欠乏とか考えると結局検査している
 - 血清FT4が高値で、TSHが不適切に正常値～高値だと感度はほぼ100%
 
 == いつ、どのように検査をする？
 
+#v(48pt) 
+
 - ホルモン過剰について、Macroadenomaにおいても明らかなScreening方法は決まっていない
-  - 2011年のガイドラインでは、PRLとGHはルーチンで測定を推奨。ACTHは臨床所見をみての検査を推奨している。
-    - PRLは経口での治療が可能なため、GH過剰産生は予後に強く影響する上に初期は無症候である事が多いため。ACTHも同じ理由でExpertによっては検査をするとの事。
+  - 2011年のガイドラインでは、PRLとGHはルーチンで測定を推奨。#lb ACTHは臨床所見をみての検査を推奨している。
+    - PRLは経口での治療が可能なため
+    - GH過剰産生は予後に強く影響する上に初期は無症候である事が多いため
+    - ACTHも同じ理由でExpertによっては検査をするとの事
   - Review論文だと下垂体のホルモン過剰産生はProlactin, IGF-1の測定で除外すべきである。
-    - UptodateだとPRL、IGF-1、LH、FSH、ACTH、24時間尿中Cortisolを推奨。
+  - UptodateだとPRL、IGF-1、LH、FSH、ACTH、24時間尿中Cortisol推奨
 
 = 下垂体機能不全
 
 == 下垂体機能不全総論
 
+- Micro incidentalomaでの下垂体機能不全は7-66%でMacroincidentalomaでは19-46%とされる
+  - Hypogonadismは~30%
+  - 副腎不全は~18%
+  - 甲状腺機能低下は~28%
+  - GH欠乏は~8%
+- 腫瘍圧迫による下垂体機能低下の一般論として
+  - GH, FSH, LH↓ → TSH↓ → ACTH↓ であり、副腎不全がある時は汎下垂体機能低下症を疑う
+  - 虎ノ門の教科書では中枢性尿崩症は術後でない限り下垂体腺腫では起きないとの事
+- 2011年のガイドラインだとClass Iでホルモン欠乏の検査を推奨している。
+
+  
+== 下垂体機能不全総論
+
 - 生命予後を悪化させるホルモンを重点的にみる
-1. 副腎不全
-1. 甲状腺機能低下症
+  - 副腎不全
+  - 甲状腺機能低下症
 - 一方で、HypogonadismやGH欠乏は成人だと治療適応も難しい
 - また、JAMAのreviewだと尿崩症にはまずならないとのこと
-- 見るべきは、まずは副腎不全、甲状腺機能低下症
+=> 見るべきは、*副腎不全、甲状腺機能低下症*
+- JAMAのReviewだと、検査はまずは迅速ACTH試験、中枢性TSH欠乏の確認、次に中枢性Hypogonadismを推奨。
+  - GH欠乏は下垂体腺腫の治療が終わり他のホルモン補充が終わったあとまでは検査しない事を推奨。
 
 == 下垂体機能不全各論
 
-#link(<adrenal_insuf>)[
-  - 中枢性副腎不全: ルーチンで検査
-  ]
+- #text(size: 28pt)[#link(<adrenal_insuf>)[
+  中枢性副腎不全: ルーチンで検査
+  ]]
 
 #link(<hypothyroid>)[
-  - 中枢性甲状腺機能低下: ルーチンで検査
+  中枢性甲状腺機能低下: ルーチンで検査
   ]
 
 #link(<GH_def>)[
-  - GH欠乏: ルーチンで検査
+  GH欠乏: ルーチンで検査
   ]
 
 #link(<hypogonado>)[
-  - Hypogonadism: ルーチンで検査
+  Hypogonadism: ルーチンで検査
   ]
 
+#link(<prolactin_def>)[
+  Prolactin欠乏: ルーチンでは行わない
+  ]
 
 #link(<central_di>)[
   - 中枢性尿崩症: ルーチンで検査
@@ -306,16 +300,13 @@
 
 == 中枢性副腎不全 #label("adrenal_insuf")
 
-- Insulin tolerance test (ITT) が中枢性副腎不全の最も信頼できる検査だが使いにくい
+- Insulin tolerance test (ITT) が最も信頼できる検査だが使いにくい
 - 早朝Cortisolが第一
   - まずは、8-9時の血清Cortisolを測定する
     - cortisol < 80 nmol/L (3 mcg/dL)は副腎不全
     - cortisol < TODO nmol/L (18 mcg/dL)は副腎不全
-
-
 - Cortisolが3mcg/dL-15mcg/dLの時 → ACTH負荷試験を行う
     - 250mcgのACTHを注射をして30/60分後のCortisolが\<18mcgで副腎不全
-    - 7-9時が最もACTHが最大値となる。Cortisolと同時採血した時のACTHの値が正常上限値の2倍以上の時に原発性副腎不全( > 22 pmol/L (100 pg/mLが典型的だが、ほとんど> 45 pmol/L )
     - 二次性副腎不全の場合通常ACTHは< 12 pmol/L (52 pg/mL)となる.
 
 
@@ -328,23 +319,36 @@
 
 == GH欠乏 #label("GH_def")
 
-- blahblah
 
+- GH欠乏は事前確率が高い状態でのみ疑う(高い事前確率とは以下の基準のうち1つ以上を満たす)
+  - 若い男性で正常な下垂体だが低身長でGH欠乏の診断が幼少期にされている
+  - 下垂体の障害が疑われる病歴(下垂体手術、放射線治療、下垂体の画像変化、頭部外傷、脳卒中)
+- ITTがGH欠乏のGold standardだが使いにくい
+  - その他としては、Glucagon刺激試験、Macimorelin test、arginine plus GH-releasing hormone (GHRH) test
+  - Dynamedでは3つ以上の下垂体ホルモン欠乏があり、年齢調整された血清IGF-1が低い時はGH低値と診断して良い
+  #align(center)[
+  vs.
+]
+  - 2011年のガイドラインでは、IGF-1低下のみでGH欠乏の診断は出来ない
+
+#tall-slide[
 == Hypogonadism #label("hypogonado")
 
 - 男性
-  - まずは早朝(可能なら7-11時前で空腹)のTotal testosteroneを最初に行う
+  - 早朝(可能なら7-11時前で空腹)のTotal testosteroneを最初に行う
     - Total testosteroneが10.4nmol/L未満（300ng/dL未満）で、FSH, LHが2回とも低いか正常であれば、ゴナドトロピン欠乏症と診断可能
-    - 健康な若年男性で肥満がない時の正常なTotal testosterone正常下限値は264 ng/dL (9.2 nmol/L)とされている(CDC).EAU は8-12 nmol/L (231-346 ng/dL) が正常下限としている
-    - Total testosterone level < 8 nmol/L (231 ng/dL)はTestosterone欠乏と定義される
-    - Total testosterone level > 8 nmol/L (231 ng/dL) かつ< 12 nmol/L (346 ng/dL) testosterone deficiencyかも知れない。追加の検査(free or bioavailable testosterone)を考慮する
-    - Total testosterone level ≥ 12 nmol/L (346 ng/dL)はTestosterone正常と考えて良い
-  - 閉経前女性: 無月経あるいは月経不順があり、E2低値および低値～正常値のFSHとLHだと診断可能
-  - 閉経後女性: FSH, LHが高値でないだけでほぼ診断可能
-    - 甲状腺異常やPRL高値について事前に除外する
-  - ゴナドトロピン放出ホルモン（GnRH）刺激検査は、基礎ホルモン検査の結果がはっきりしない場合にゴナドトロピン欠乏症の診断に用いられてきたが、国際的な内分泌学会では推奨されていない。理由として
-    - GnRH刺激試験は、ゴナドトロピン分泌反応を検出するために数日間の刺激を必要とする
-    - 単回GnRH注射でゴナドトロピン欠乏症の主原因を同定するのは難しい
+    - Total testosterone level < 231 ng/dLはTestosterone欠乏
+    - Total testosterone level > 231 ng/dL かつ< 346 ng/dLでは追加の検査(free or bioavailable testosterone)を考慮する
+    - Total testosterone level ≥ 346 ng/dLはTestosterone正常と考えて良い
+- 閉経前女性: 無月経あるいは月経不順があり、E2低値および低値～正常値のFSHとLHだと診断可能
+- 閉経後女性: FSH, LHが高値でないだけでほぼ診断可能
+  - 甲状腺異常やPRL高値について事前に除外する
+  - ゴナドトロピン放出ホルモン（GnRH）刺激検査は、基礎ホルモン検査の結果がはっきりしない場合にゴナドトロピン欠乏症の診断に用いられてきたが、国際的な内分泌学会では推奨されていない。
+]
+
+== Prolactin欠乏 #label("prolactin_def")
+
+- 血清PRLが< 100 pmol/Lの時に欠乏を示唆する
 
 == 中枢性尿崩症 #label("central_di")
 
@@ -355,44 +359,20 @@
   - 尿糖なしの時に、血清浸透圧 >295 mOsm/kg、尿浸透圧が600 mOsm/kgの時(尿と血清浸透圧の比が2以上)が正常
   - 尿崩症は血清浸透圧 >295 mOsm/kgの時に尿浸透圧が600 mOsm/kg未満の時(尿と血清浸透圧の比が2未満)で診断される
 
-== test
-
-- Micro incidentalomaでの下垂体機能不全は7-66%でMacroincidentalomaでは19-46%とされる
-  - Hypogonadismは~30%
-  - 副腎不全は~18%
-  - 甲状腺機能低下は~28%
-  - GH欠乏は~8%
-- 腫瘍圧迫による下垂体機能低下の一般論として
-  - GH, FSH, LH↓ → TSH↓ → ACTH↓ であり、副腎不全がある時は汎下垂体機能低下症を疑う
-  - 虎ノ門の教科書では中枢性尿崩症は術後でない限り下垂体腺腫では起きないとの事
-- 2011年のガイドラインだとClass Iでホルモン欠乏の検査を推奨している。
-- JAMAのReviewだと、検査はまずは迅速ACTH試験、中枢性TSH欠乏の確認、次に中枢性Hypogonadismを推奨。GH欠乏は下垂体腺腫の治療が終わり他のホルモン補充が終わったあとまでは検査しない事を推奨。
-  
-
-
-  - GH欠乏
-      - GH欠乏は事前確率が高い状態でのみ疑う(高い事前確率とは以下の基準のうち1つ以上を満たす)
-        - 若い男性で正常な下垂体だが低身長でGH欠乏の診断が幼少期にされている
-        - 下垂体の障害が疑われる病歴(下垂体手術、放射線治療、下垂体の画像変化、頭部外傷、脳卒中)
-      - Dynamedでは3つ以上の下垂体ホルモン欠乏があり、年齢調整された血清IGF-1が低い時はGH低値と診断して良い
-        - ITTがGH欠乏のGold standardだが使いにくい
-        - その他としては、Glucagon刺激試験、Macimorelin test、arginine plus GH-releasing hormone (GHRH) test
-        - 2011年のガイドラインでは、IGF-1低下のみでGH欠乏の診断は出来ないと記載あり
-  - Prolactin欠乏
-    - 血清PRLが< 100 pmol/Lの時に欠乏を示唆する
-
 == いつ、どのように検査をする？
 
 - ホルモン低下について、複数のScreening方法があり確定的なものはない。
   - 2011年のガイドラインでは意見を2つ載せている
     - Minimal: FT4, 朝のCortisolとTestosterone
     - 追加: FT4, 朝のCortisolとTestosteroneに加えてTSH、LH, FSH, IGF-1
-    - ACTHとGH欠乏がBaselineの検査で確定できない時に負荷試験を考慮する。MacroadenomaのIncidentalomanoうち60-85%は何からのホルモン分泌の異常があるため正当化される。
+    - ACTHとGH欠乏がBaselineの検査で確定できない時に負荷試験を考慮する。
   - Microadenomaだとより分かっていない。UptodateだとPRLだけ推奨だが2011年のEndocrine Society Guidelineとは異なる。
 
-== 視野障害について
+= 視野障害について
 
-== 治療法
+== 視野障害総論
+
+= 治療法
 
 - Cushing syndrome、末端肥大症は外科治療が必要
 - 2011年のガイドラインでは、incidentalomaでもホルモン分泌障害があるときは手術を考慮するとの記載あり(class 2)
