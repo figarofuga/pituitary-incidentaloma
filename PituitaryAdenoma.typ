@@ -331,20 +331,23 @@
 ]
   - 2011年のガイドラインでは、IGF-1低下のみでGH欠乏の診断は出来ない
 
-#tall-slide[
+
 == Hypogonadism #label("hypogonado")
 
+- 男性、女性(閉経前/後)で方法が異なる。
+- ゴナドトロピン放出ホルモン（GnRH）刺激検査は、基礎ホルモン検査の結果がはっきりしない場合にゴナドトロピン欠乏症の診断に用いられてきたが、国際的な内分泌学会では推奨されていない。
+
+== Hypogonadism 各論
 - 男性
   - 早朝(可能なら7-11時前で空腹)のTotal testosteroneを最初に行う
-    - Total testosteroneが10.4nmol/L未満（300ng/dL未満）で、FSH, LHが2回とも低いか正常であれば、ゴナドトロピン欠乏症と診断可能
-    - Total testosterone level < 231 ng/dLはTestosterone欠乏
-    - Total testosterone level > 231 ng/dL かつ< 346 ng/dLでは追加の検査(free or bioavailable testosterone)を考慮する
+    - Total testosteroneが300ng/dL未満で、FSH, LHが2回とも低いか正常であれば、ゴナドトロピン欠乏症と診断可能
+    - Total testosterone < 231 ng/dLはTestosterone欠乏
+    - Total testosterone > 231 ng/dLかつ< 346 ng/dLでは追加の検査(free or bioavailable testosterone)を考慮する
     - Total testosterone level ≥ 346 ng/dLはTestosterone正常と考えて良い
 - 閉経前女性: 無月経あるいは月経不順があり、E2低値および低値～正常値のFSHとLHだと診断可能
 - 閉経後女性: FSH, LHが高値でないだけでほぼ診断可能
   - 甲状腺異常やPRL高値について事前に除外する
-  - ゴナドトロピン放出ホルモン（GnRH）刺激検査は、基礎ホルモン検査の結果がはっきりしない場合にゴナドトロピン欠乏症の診断に用いられてきたが、国際的な内分泌学会では推奨されていない。
-]
+  
 
 == Prolactin欠乏 #label("prolactin_def")
 
@@ -374,6 +377,8 @@
 
 = 治療法
 
+== 治療法総論
+
 - Cushing syndrome、末端肥大症は外科治療が必要
 - 2011年のガイドラインでは、incidentalomaでもホルモン分泌障害があるときは手術を考慮するとの記載あり(class 2)
   
@@ -382,14 +387,20 @@
 - 非機能性下垂体腫瘍の場合、経過観察で良い。MRIは6－12ヶ月後に行いMass effectsなどを確認する。
 -  Hypopituitarismについては半年後に行い、その後は1毎に行う
 
+== 参考文献
 
-- 竹内靖博・竹下彰・辰島啓太編著『虎の門病院内分泌クリニカルプラクティス―外来・入院からフォローアップまで』、クリニコ出版、2020年6月
-- Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048 
-- Teramoto A, Hirakawa K, Sanno N, Osamura Y. Incidental pituitary lesions in 1,000 unselected autopsy specimens. Radiology. 1994;193(1):161-164. doi:10.1148/radiology.193.1.8090885 
-- American College of Physicians. ACP MKSAP: Medical Knowledge Self-Assessment Program. American College of Physicians; 2025. https://www.acponline.org/featured-products/acp-mksap
-- DynaMed. Sellar Mass - Approach to the Patient. EBSCO Information Services. Accessed 2025年8月2日. https://www.dynamed.com/approach-to/sellar-mass-approach-to-the-patient
-- Boguszewski CL, de Castro Musolino NR, Kasuki L. Management of pituitary incidentaloma. Best Pract Res Clin Endocrinol Metab. 2019;33(2):101268. doi:10.1016/j.beem.2019.04.002 
-- Lee SY, Pearce EN. Hyperthyroidism: A Review. JAMA. 2023;330(15):1472-1483. doi:10.1001/jama.2023.19052 
-Peter J Snyder, MD. Pituitary incidentalomas. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed August 15, 2025. https://www.uptodate.com. 
-- Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048
-  
+#block[
+  #set text(size: 12pt)
+
+1. 竹内靖博・竹下彰・辰島啓太編著『虎の門病院内分泌クリニカルプラクティス―外来・入院からフォローアップまで』、クリニコ出版、2020年6月
+2. Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048 
+3. 竹内靖博・竹下彰・辰島啓太編著『虎の門病院内分泌クリニカルプラクティス―外来・入院からフォローアップまで』、クリニコ出版、2020年6月
+4. Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048 
+5. Teramoto A, Hirakawa K, Sanno N, Osamura Y. Incidental pituitary lesions in 1,000 unselected autopsy specimens. Radiology. 1994;193(1):161-164. doi:10.1148/radiology.193.1.8090885 
+6. American College of Physicians. ACP MKSAP: Medical Knowledge Self-Assessment Program. American College of Physicians; 2025. https://www.acponline.org/featured-products/acp-mksap
+7. DynaMed. Sellar Mass - Approach to the Patient. EBSCO Information Services. Accessed 2025年8月2日. https://www.dynamed.com/approach-to/sellar-mass-approach-to-the-patient
+8. Boguszewski CL, de Castro Musolino NR, Kasuki L. Management of pituitary incidentaloma. Best Pract Res Clin Endocrinol Metab. 2019;33(2):101268. doi:10.1016/j.beem.2019.04.002 
+9. Lee SY, Pearce EN. Hyperthyroidism: A Review. JAMA. 2023;330(15):1472-1483. doi:10.1001/jama.2023.19052 
+10. Peter J Snyder, MD. Pituitary incidentalomas. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed August 15, 2025. https://www.uptodate.com. 
+11. Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048
+]
