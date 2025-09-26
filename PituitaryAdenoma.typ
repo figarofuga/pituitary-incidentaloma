@@ -170,7 +170,7 @@
   a. 下垂体自身への圧排効果 = 下垂体機能不全
   b. 周囲の組織(=視交叉)
 
-= 腫瘍によるホルモン過剰産生
+= ホルモン過剰産生
 
 == 基本的な考え方
 
@@ -186,20 +186,20 @@
 
 == ホルモン過剰産生の各論
 
-- #text(size: 24pt)[#link(<hyperprl>)[
-  - 高PRL血症: ルーチンで検査
-  ]]
-
-#link(<cushing>)[
-  - Cushing syndrome: ルーチンで検査(?)
+- #link(<hyperprl>)[
+   高PRL血症: ルーチンで検査
   ]
 
-#link(<hypergh>)[
-  - 先端巨大症(GH excess): ルーチンで検査
+- #link(<cushing>)[
+   Cushing syndrome: ルーチンで検査(?)
   ]
 
-#link(<hypertsh>)[
-  - 中枢性甲状腺機能亢進症: ルーチンでは行わない
+- #link(<hypergh>)[
+   先端巨大症(GH excess): ルーチンで検査
+  ]
+
+- #link(<hypertsh>)[
+   中枢性甲状腺機能亢進症: ルーチンでは行わない
   ]
 
 == 高PRL血症 #label("hyperprl")
@@ -210,7 +210,7 @@
   - 薬剤(D2 blocker)や甲状腺機能を確認する
 - 更に下垂体腺腫自身の茎部圧迫によるもの(Stalk effect)の両者がありうる
   - Stalk effectはPRL < 150 mcg/L程度である事が多い
-#refs("2023;329(16):1386-1398. doi:10.1001/jama.2023.5444")
+#refs("JAMA. 2023;329(16):1386-1398. doi:10.1001/jama.2023.5444")
 
 == Cushing syndrome #label("cushing")
 
@@ -274,28 +274,28 @@
 
 == 下垂体機能不全各論
 
-- #text(size: 28pt)[#link(<adrenal_insuf>)[
+- #link(<adrenal_insuf>)[
   中枢性副腎不全: ルーチンで検査
-  ]]
+  ]
 
-#link(<hypothyroid>)[
+- #link(<hypothyroid>)[
   中枢性甲状腺機能低下: ルーチンで検査
   ]
 
-#link(<GH_def>)[
+- #link(<GH_def>)[
   GH欠乏: ルーチンで検査
   ]
 
-#link(<hypogonado>)[
+- #link(<hypogonado>)[
   Hypogonadism: ルーチンで検査
   ]
 
-#link(<prolactin_def>)[
+- #link(<prolactin_def>)[
   Prolactin欠乏: ルーチンでは行わない
   ]
 
-#link(<central_di>)[
-  - 中枢性尿崩症: ルーチンで検査
+- #link(<central_di>)[
+  中枢性尿崩症: ルーチンで検査
   ]
 
 == 中枢性副腎不全 #label("adrenal_insuf")
@@ -371,9 +371,13 @@
     - ACTHとGH欠乏がBaselineの検査で確定できない時に負荷試験を考慮する。
   - Microadenomaだとより分かっていない。UptodateだとPRLだけ推奨だが2011年のEndocrine Society Guidelineとは異なる。
 
-= 視野障害について
+== 視野障害について
 
-== 視野障害総論
+- MRIでOptic Chiasmの compressionがある場合は自覚症状がなくても、#lb Goldman視野検査などの正式な視野障害の評価を行う
+  
+#refs("Clin Med. 2023;23(2):129-134. doi:10.7861/clinmed.2023-0020
+J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
+
 
 = 治療法
 
