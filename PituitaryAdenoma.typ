@@ -1,8 +1,6 @@
 // Get Polylux from the official package repository
 #import "@preview/touying:0.5.5": *
 #import "@preview/fletcher:0.5.1" as fletcher: diagram, node, edge
-#import "@preview/cetz:0.4.0"
-#import "@preview/cetz-plot:0.1.2": plot, chart
 #import themes.university: *
 
 #import "@preview/numbly:0.1.0": numbly
@@ -53,7 +51,7 @@
 
 #let lb = linebreak(justify: false)
 
-// 大まかなゲシュタルトとして若年者の #lb 「繰り返す発熱と腹痛(+高CRP)」を忘れない  使用例
+// 大まかなゲシュタルトとして若年者の \ 「繰り返す発熱と腹痛(+高CRP)」を忘れない  使用例
 
 #let refs(body) = {
   set text(size: 8pt)
@@ -121,54 +119,52 @@
 
 == 下垂体偶発種とは
 
-- 下垂体に偶発的に見つかった結節を”pituitary incidentaloma”と言う
+- 下垂体に偶発的に見つかった結節を”下垂体偶発種”と言う
   - そのため、厳密には下垂体腺腫以外も含む(7-8割は腺腫、次はRathke嚢胞)
 - 微小の下垂体結節は結構Common
   - 無関係の理由でMRIを撮像したうち、microadenomaは10-38%
   - macroadenomaは0.2%
-  - Autopsyだと日本人のうち18%程度あると言われている
+  - Autopsyだと日本人のうち18%程度の有病率と言われている
+    - 日本での1000人の連続するAutopsy患者では178人にIncidentalomaがあり、そのうち34%が2mm以上
+    - AdenomaとHyperplasiaが20人(11%)
+    - 37人(21%)がRathke嚢胞
+    - 梗塞および出血がおのおの2人(1%)
 
 #refs("Radiology. 1994;193(1):161-164. doi:10.1148/radiology.193.1.8090885
 ")
-
-== Pituitary adenoma is common
-
-- 一般人口だと約10%であると言われている
-- 日本での1000人の連続するAutopsy患者では178人にIncidentalomaがあり、そのうち34%が2mm以上
-  - AdenomaとHyperplasiaが20人(11%)
-  - 37人(21%)がRathke嚢胞
-  - 梗塞および出血がおのおの2人(1%)
 
 == 下垂体偶発種を語る上で重要な視点
 
 - 上記の通り、Incidentalomaは実は多い
 - その為、悉皆調査は基本的には無理
 - かつ、分類や下垂体腺腫の種類は本来はOpeしないと分からない
-- ⇒ 下垂体腺腫の疫学はその臨床現場 #lb (見つかった理由やOpeをしたかなど)に依存する
+- ⇒ 下垂体腺腫の疫学はその臨床現場 \ (見つかった理由やOpeをしたかなど)に依存する
 
 == 疫学
 
 - Incidentalomaと通常のAdenomaで疫学が変わる
   - 通常のPituitary adenomaの場合
     - 53%がProlactinoma
-    - *30%が非機能性Pituitary adenoma*
+    - #text(size: 28pt, fill: red, weight: "bold")[30%が非機能性腺腫]
     - 12%がGH産生腫瘍(somatotropinoma)
     - 4%がACTH産生腫瘍(Corticotropinoma)
     - 1%がTSH産生腫瘍(thyrotropinoma)
 
   - Incidentalomaの場合(約90%がAdenoma)
-    - *約50%が非機能性Pituitary adenoma*
+    - #text(size: 28pt, fill: red, weight: "bold")[約50%が非機能性腺腫]
     - 10%がGH産生腫瘍
     - 15%がGonadothropinoma
+- Incidentalomaだと、非機能性腺腫が多い事は注目に値する
 #refs("J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
+
+
 
 == Pituitary incidentalomaを見たら・・・・・・
 
-- 2つの視点で考える
-1. 腫瘍によるホルモン過剰産生
-2. 腫瘍による圧排効果
-  a. 下垂体自身への圧排効果 = 下垂体機能不全
-  b. 周囲の組織(=視交叉)
+- 3つの視点で考える
+  1. 腫瘍によるホルモン過剰産生
+  2. 腫瘍による圧排効果による下垂体機能不全
+  3. 腫瘍による視交叉の圧排の有無
 
 = ホルモン過剰産生
 
@@ -176,13 +172,16 @@
 
 - Microincidetanlomaでは稀とされる
 - Macroadenoma全体では以下の通り
-  - Prolactinomaが53%, GH産生が12%, ACTH産生が4%, TSH産生が1%
+  - Prolactinomaが53%
+  - GH産生が12%
+  - ACTH産生が4% 
+  - TSH産生が1%
 - 頻度と治療可能性の観点で考える
-  - PRLは*内科的に治療可能*
-  - ACTH, GHは予後不良で手術の治療適応
+  - PRLは#text(fill: red, weight: "bold")[内科的に治療可能]
+  - ACTH, GHは#underline[*予後不良で手術の治療適応*]
 - PRL, ACTH, GHは検索すべし！！
 
-#refs("2023;329(16):1386-1398. doi:10.1001/jama.2023.5444")
+#refs("JAMA. 2023;329(16):1386-1398. doi:10.1001/jama.2023.5444")
 
 == ホルモン過剰産生の各論
 
@@ -207,14 +206,14 @@
 
 - PRL > 250 mcg/Lは特異度100％でProlactinoma
 - 一方で中途半端な高値は色々な理由がある
-  - 薬剤(D2 blocker)や甲状腺機能を確認する
-- 更に下垂体腺腫自身の茎部圧迫によるもの(Stalk effect)の両者がありうる
-  - Stalk effectはPRL < 150 mcg/L程度である事が多い
+  - 妊娠、薬剤(D2 blocker)や甲状腺機能を確認する
+- 更に下垂体腺腫自身の茎部圧迫によるもの(Stalk effect)のもありうる
+  - Stalk effectだけではPRL < 150 mcg/L程度である事が多い
 #refs("JAMA. 2023;329(16):1386-1398. doi:10.1001/jama.2023.5444")
 
 == Cushing syndrome #label("cushing")
 
-- 2011年のヨーロッパのガイドラインだと実は絶対ではない #lb (臨床的に疑った時のみ)
+- 2011年のヨーロッパのガイドラインだと実はルーチン検査ではない \ (臨床的に疑った時のみ)
 #refs("J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
 - 個人的には、Macroadenomaならばルーチンで行うべきと考える
 - 3種類の方法があるが、一番簡単なのはLDST
@@ -225,8 +224,8 @@
 == 先端巨大症(GH excess) #label("hypergh")
 
 - GHの値だけでは診断出来ない
-- IGF-1：年齢調整されたCutoffで感度、特異度はほぼ100%(12－18歳、妊婦以外)
-- OGTT検査でGH ≧0.4 mcg/L(抑制されない)は感度85-90%, 特異度は95%を超える
+- IGF-1：年齢調整されたCutoffで感度、特異度はほぼ100% \ (12-18歳、妊婦以外)
+- OGTT検査でGH ≧0.4 mcg/L(抑制されない)は \ 感度85-90%, 特異度は95%を超える
 
 == 中枢性甲状腺機能亢進症 #label("hypertsh")
 
@@ -236,30 +235,33 @@
 
 == いつ、どのように検査をする？
 
-#v(48pt) 
-
 - ホルモン過剰について、Macroadenomaにおいても明らかなScreening方法は決まっていない
-  - 2011年のガイドラインでは、PRLとGHはルーチンで測定を推奨。#lb ACTHは臨床所見をみての検査を推奨している。
+  - 2011年のガイドラインでは、PRLとGHはルーチンで測定を推奨。\ ACTHは臨床所見をみての検査を推奨している。
     - PRLは経口での治療が可能なため
     - GH過剰産生は予後に強く影響する上に初期は無症候である事が多いため
     - ACTHも同じ理由でExpertによっては検査をするとの事
-  - Review論文だと下垂体のホルモン過剰産生はProlactin, IGF-1の測定で除外すべきである。
+  - Review論文だと下垂体のホルモン過剰産生はProlactin, IGF-1の測定で \ 除外すべきとの記載あり
   - UptodateだとPRL、IGF-1、LH、FSH、ACTH、24時間尿中Cortisol推奨
+
+#refs(
+  "Best Pract Res Clin Endocrinol Metab. 2019;33(2):101268. doi:10.1016/j.beem.2019.04.002
+  Peter J Snyder, MD. Pituitary incidentalomas. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed August 15, 2025. https://www.uptodate.com.")
 
 = 下垂体機能不全
 
 == 下垂体機能不全総論
 
 - Micro incidentalomaでの下垂体機能不全は7-66%でMacroincidentalomaでは19-46%とされる
-  - Hypogonadismは~30%
-  - 副腎不全は~18%
-  - 甲状腺機能低下は~28%
-  - GH欠乏は~8%
+  - Hypogonadismは～30%
+  - 副腎不全は～18%
+  - 甲状腺機能低下は～28%
+  - GH欠乏は～8%
 - 腫瘍圧迫による下垂体機能低下の一般論として
-  - GH, FSH, LH↓ → TSH↓ → ACTH↓ であり、副腎不全がある時は汎下垂体機能低下症を疑う
-  - 虎ノ門の教科書では中枢性尿崩症は術後でない限り下垂体腺腫では起きないとの事
-- 2011年のガイドラインだとClass Iでホルモン欠乏の検査を推奨している。
-
+  - GH, FSH, LH↓ → TSH↓ → ACTH↓ 
+    - 副腎不全がある時は汎下垂体機能低下症を疑う
+- 2011年のガイドラインだとClass Iでホルモン欠乏の検査の推奨
+#refs("竹内靖博・竹下彰・辰島啓太編著(2020).虎の門病院内分泌クリニカルプラクティス―外来・入院からフォローアップまで.クリニコ出版
+J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
   
 == 下垂体機能不全総論
 
@@ -267,7 +269,6 @@
   - 副腎不全
   - 甲状腺機能低下症
 - 一方で、HypogonadismやGH欠乏は成人だと治療適応も難しい
-- また、JAMAのreviewだと尿崩症にはまずならないとのこと
 => 見るべきは、*副腎不全、甲状腺機能低下症*
 - JAMAのReviewだと、検査はまずは迅速ACTH試験、中枢性TSH欠乏の確認、次に中枢性Hypogonadismを推奨。
   - GH欠乏は下垂体腺腫の治療が終わり他のホルモン補充が終わったあとまでは検査しない事を推奨。
@@ -355,6 +356,7 @@
 
 == 中枢性尿崩症 #label("central_di")
 
+- 虎ノ門の教科書では中枢性尿崩症は術後でない限り下垂体腺腫では起きないとの事
 - 診断のGold standardは存在しない
 - 水制限試験がしばしば初期の検査で行われる
   - 水分制限試験の亜種として、3%食塩水刺激試験がある
@@ -373,7 +375,7 @@
 
 == 視野障害について
 
-- MRIでOptic Chiasmの compressionがある場合は自覚症状がなくても、#lb Goldman視野検査などの正式な視野障害の評価を行う
+- MRIでOptic Chiasmの compressionがある場合は自覚症状がなくても、\ Goldman視野検査などの正式な視野障害の評価を行う
   
 #refs("Clin Med. 2023;23(2):129-134. doi:10.7861/clinmed.2023-0020
 J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
@@ -396,15 +398,14 @@ J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
 #block[
   #set text(size: 12pt)
 
-1. 竹内靖博・竹下彰・辰島啓太編著『虎の門病院内分泌クリニカルプラクティス―外来・入院からフォローアップまで』、クリニコ出版、2020年6月
+1. 竹内靖博・竹下彰・辰島啓太編著(2020).虎の門病院内分泌クリニカルプラクティス―外来・入院からフォローアップまで.クリニコ出版
 2. Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048 
-3. 竹内靖博・竹下彰・辰島啓太編著『虎の門病院内分泌クリニカルプラクティス―外来・入院からフォローアップまで』、クリニコ出版、2020年6月
-4. Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048 
-5. Teramoto A, Hirakawa K, Sanno N, Osamura Y. Incidental pituitary lesions in 1,000 unselected autopsy specimens. Radiology. 1994;193(1):161-164. doi:10.1148/radiology.193.1.8090885 
-6. American College of Physicians. ACP MKSAP: Medical Knowledge Self-Assessment Program. American College of Physicians; 2025. https://www.acponline.org/featured-products/acp-mksap
-7. DynaMed. Sellar Mass - Approach to the Patient. EBSCO Information Services. Accessed 2025年8月2日. https://www.dynamed.com/approach-to/sellar-mass-approach-to-the-patient
-8. Boguszewski CL, de Castro Musolino NR, Kasuki L. Management of pituitary incidentaloma. Best Pract Res Clin Endocrinol Metab. 2019;33(2):101268. doi:10.1016/j.beem.2019.04.002 
-9. Lee SY, Pearce EN. Hyperthyroidism: A Review. JAMA. 2023;330(15):1472-1483. doi:10.1001/jama.2023.19052 
-10. Peter J Snyder, MD. Pituitary incidentalomas. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed August 15, 2025. https://www.uptodate.com. 
-11. Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048
+3. Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048 
+4. Teramoto A, Hirakawa K, Sanno N, Osamura Y. Incidental pituitary lesions in 1,000 unselected autopsy specimens. Radiology. 1994;193(1):161-164. doi:10.1148/radiology.193.1.8090885 
+5. American College of Physicians. ACP MKSAP: Medical Knowledge Self-Assessment Program. American College of Physicians; 2025. https://www.acponline.org/featured-products/acp-mksap
+6. DynaMed. Sellar Mass - Approach to the Patient. EBSCO Information Services. Accessed 2025年8月2日. https://www.dynamed.com/approach-to/sellar-mass-approach-to-the-patient
+7. Boguszewski CL, de Castro Musolino NR, Kasuki L. Management of pituitary incidentaloma. Best Pract Res Clin Endocrinol Metab. 2019;33(2):101268. doi:10.1016/j.beem.2019.04.002 
+8. Lee SY, Pearce EN. Hyperthyroidism: A Review. JAMA. 2023;330(15):1472-1483. doi:10.1001/jama.2023.19052 
+9. Peter J Snyder, MD. Pituitary incidentalomas. In: UpToDate, Connor RF (Ed), Wolters Kluwer. Accessed August 15, 2025. https://www.uptodate.com. 
+10. Freda PU, Beckers AM, Katznelson L, et al. Pituitary incidentaloma: an endocrine society clinical practice guideline. J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048
 ]
