@@ -236,7 +236,7 @@ https://www.dynamed.com/approach-to/sellar-mass-approach-to-the-patient")
 
 == Cushing syndrome #label("cushing")
 
-- 2011年のヨーロッパのガイドラインだと実はルーチン検査ではない \ (臨床的に疑った時のみ)
+- 2011年のガイドラインだと実はルーチン検査ではない \ (臨床的に疑った時のみ)
 #refs("J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
 - 個人的には、Macroadenomaならばルーチンで行うべきと考える
 - 3種類の方法があるが、一番簡単なのはLDST
@@ -254,7 +254,7 @@ https://www.dynamed.com/approach-to/sellar-mass-approach-to-the-patient")
 
 - TSH過剰症の検査はルーチンでは行わない
   - ただし、ホルモン欠乏とか考えると結局検査している
-- 血清FT4が高値で、TSHが不適切に正常値～高値だと感度はほぼ100%
+- 血清FT4高値で、TSHが不適切に正常～高値の感度は約100%
 
 == いつ、どのように検査をする？
 
@@ -358,7 +358,7 @@ J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
 == Hypogonadism総論 #label("hypogonado")
 
 - 男性、女性(閉経前/後)で方法が異なる。
-- ゴナドトロピン放出ホルモン（GnRH）刺激検査は、基礎ホルモン検査の結果がはっきりしない場合にゴナドトロピン欠乏症の診断に用いられてきたが、国際的な内分泌学会では推奨されていない。
+- ゴナドトロピン放出ホルモン（GnRH）刺激検査は、基礎ホルモン検査の結果がはっきりしない場合に用いられてきたが、国際的な内分泌学会では*推奨されていない*
 
 == Hypogonadism 各論
 - 男性
@@ -382,10 +382,10 @@ J Clin Endocrinol Metab. 2011;96(4):894-904. doi:10.1210/jc.2010-1048")
 #refs("竹内靖博・竹下彰・辰島啓太編著(2020).虎の門病院内分泌クリニカルプラクティス―外来・入院からフォローアップまで.クリニコ出版")
 - 診断のGold standardは存在しない
 - 水制限試験がしばしば初期の検査で行われる
-  - 水分制限試験の亜種として、3%食塩水刺激試験がある
   - 多尿 (> 50 mL/kg in 24 hours or 3.5 L/day in a 70kg) の時に血清と尿中浸透圧を同時測定する
   - 尿糖なしの時に、血清浸透圧 >295 mOsm/kg、尿浸透圧が600 mOsm/kgの時(尿と血清浸透圧の比が2以上)が正常
   - 尿崩症は血清浸透圧 >295 mOsm/kgの時に尿浸透圧が600 mOsm/kg未満の時(尿と血清浸透圧の比が2未満)で診断される
+- 水分制限試験の亜種として、3%食塩水刺激試験がある
 
 == いつ、どのように検査をする？
 
@@ -419,7 +419,7 @@ Peter J Snyder, MD. Pituitary incidentalomas. In: UpToDate, Connor RF (Ed), Wolt
 
 - Cushing syndrome、末端肥大症は外科治療が必要
 - 非機能性腫瘍で視野障害がある場合は外科治療が必要
-- 2011年のガイドラインでは、incidentalomaでもホルモン分泌障害があるときは手術を考慮するとの記載あり(class 2)
+- 2011年のガイドラインでは、incidentalomaでも \ ホルモン分泌障害があるときは手術を考慮するとの記載あり
 - Ope適応などは専門医にコンサルトが良い
 
 == Hypopituitarismの治療
@@ -433,9 +433,7 @@ Peter J Snyder, MD. Pituitary incidentalomas. In: UpToDate, Connor RF (Ed), Wolt
 - 副腎不全がある場合は先に副腎不全を治療する
 - GHや性ホルモンの補充は適応が難しいので専門医にコンサルト
 
-#refs("J Clin Endocrinol Metab. 2016;101(11):3888-3921. doi:10.1210/jc.2016-2118
-  
-")
+#refs("J Clin Endocrinol Metab. 2016;101(11):3888-3921. doi:10.1210/jc.2016-2118")
 
 == Follow up
 
